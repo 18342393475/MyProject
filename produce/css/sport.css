@@ -1,0 +1,111 @@
+@media (min-width: 768px){
+    .introduce_img{
+        width:490px;
+        height:auto;
+    }
+    .zixun dl{
+        margin-top: 36%;
+    }
+    .release dl{
+        margin-top:42%;
+    }
+    .search_box{
+        margin-top:41%;
+    }
+}
+@media (max-width: 767px) {
+    dl,.search_box{
+        text-align: center;}
+    .zixun dl{
+        margin-top: 30px;
+    }
+    .search_box{
+        margin:20px auto;
+    }
+}
+
+.text-desc{
+    font-size:22px;
+    color:#323232;
+    margin-top: 48px;
+}
+.text-desc-english{
+    font-size:18px;
+    color:#797979;
+}
+.text-desc-text{
+    font-size:16px;
+    color:#8A8A8A;
+    margin-top: 25px;
+    margin-bottom: 53px;
+}
+.underline{
+    width:50px;
+    height:2px;
+    background-color:#F26432;
+}
+
+
+
+.zixun{
+    background-color:#E7E7E7;
+
+}
+
+.zixun dt{
+    color:#0364FF;
+    font-size:22px;
+    font-weight: 600;
+}
+.zixun-number{
+    width:30px;
+    font-size:24px;
+    display: inline-block;
+}
+.zixun dd{
+    padding-left: 30px;
+    color:#5E5E5E;
+    font-size:16px;
+}
+
+
+
+.release dt{
+    color:#535353;
+    font-size:24px;
+    font-weight: 600;
+}
+.release dd{
+    font-size:16px;
+    color:#595959;
+}
+.release .preview{
+    font-size:18px;
+    font-weight: 400;
+    color:#7a7a7a;
+    margin-bottom:28px;
+}
+
+.search{
+    background-color:#5EA3DE;
+}
+.search div{
+    color:#fff;
+    font-size:15px;
+}
+.search .search-text{
+
+    font-size:36px;
+}
+.search .search-desc{
+    font-size:22px;
+    margin-bottom:28px;
+}
+
+
+
+.understand h4 {
+    font-size:26px;
+    margin-top:56px;
+    margin-bottom:30px;
+}
