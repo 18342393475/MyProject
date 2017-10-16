@@ -1,0 +1,1281 @@
+@charset "utf-8";
+.top_box{
+	min-width:1400px;
+}
+.clearmargin{
+	content:'';
+	display:table;
+}
+html,body{
+	height:100%;
+	overflow-y:hidden;
+	overflow-x:auto;
+}
+.page{
+	width:1400px;
+	background-color:#2D2D2D;
+	position:relative;
+}
+
+.page_content{
+	margin-left:4px;
+	width:785px;
+	overflow:hidden;
+	position:relative;
+	height:200px;
+}
+.page_content_sub{
+	width:775px;
+	position:absolute;
+	top:0;
+	left:0;
+	overflow:hidden;	
+}
+/****  class=page_left  ***********/
+.left_change_box{
+	width:100%;
+	
+}
+.page_left_sub{
+	position:absolute;
+	width:100%;
+}
+.left_change_box>div{
+	width:49%;
+	text-align:center;
+	color:#A0A0A0;
+	height:30px;
+	line-height:30px;
+	cursor:pointer;
+	font-size:13px;
+}
+
+.page_left_bettingRecord,.page_left_nowList{
+	display:none;
+	
+}
+.page_left{
+	color:#B4B4B4;
+	overflow:hidden;
+	position:relative;
+	font-family:"sans-serif";
+	width:200px;
+}
+.page_right{
+	margin-left:4px;
+}
+
+.page_left_nav{max-width:auot;max-height:auto;}
+.page_left_title{
+	height:40px;
+	font-size:15px;
+	font-weight:bold;
+	line-height:40px;
+	background-color:#4B4B4B;
+	padding-left:10px;
+	cursor:pointer;
+	color:#fff;
+}
+.page_left_title:hover{
+	color:#E2E2E2;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+}
+ul.page_left_content li{
+	padding-left:10px;
+	height:26px;
+	line-height:26px;
+	cursor:pointer;
+}
+ul.page_left_content li:hover span,ul.page_left_content li.itemUl_li_active span{
+	color:#44C48B;
+}
+ul.page_left_content li span{
+	color:#b4b4b4;
+}
+ul.page_left_content li .num{
+	margin-right:15px;
+}
+ul.page_left_content li input{
+	margin-right:6px;
+
+}
+
+.sport_tree_content{
+	margin-top:6px;
+}
+.sport_tree_two{
+	height:25px;
+	line-height:25px;
+}
+.sport_tree_two>div{
+	width:33%;
+	text-align:center;
+	cursor:pointer;
+	position:relative;
+	color:#b4b4b4;
+}
+.tick{
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 6px 6px;
+    border-color: transparent transparent #555 transparent;
+	position:absolute;
+	bottom:-6px;
+	left:40%;
+	display:none;
+}
+.sport_tree_two_active .tick{
+	display:block;
+}
+.sport_tree_two>div:hover{
+	color:#fff;
+}
+.sport_tree_two>div.sport_tree_two_active{
+	color:#fff;
+}
+.item_sub{
+	width:100%;
+	height:30px;
+	background-color:#4B4B4B;
+	line-height:30px;
+	font-size:13px;
+	cursor:pointer;
+	border-top:1px solid #5c5c5c;
+	border-bottom:1px solid #1e1e1e;
+}
+.item_sub span{
+	color:#e8e8e8;
+}
+.item_sub_active span{
+	color:#fff;
+}
+.item_sub img{
+	
+}
+.item_sub .img{
+	width:17px;
+	height:17px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:6px;
+	background-image:url("../images2/cion.png");
+	background-repeat:no-repeat;
+}
+.img.gamelx1{
+	background-position:-15px -46px;
+}
+.img.gamelx2{
+	background-position:-15px -71px;
+}
+.img.gamelx3{
+	background-position:-15px -96px;
+}
+.img.gamelx4{
+	background-position:-15px -121px;
+}
+.img.gamelx5{
+	background-position:-15px -148px;
+}
+.img.gamelx6{
+	background-position:-15px -171px;
+}
+.img.gamelx7{
+	background-position:-15px -190px;
+}
+.img.gamelx8{
+	background-position:-15px -216px;
+}
+.img.gamelx9{
+	background-position:-15px -241px;
+}
+.item_sub .img.gamelx10{
+	height:21px;
+	margin-top:4px;
+	background-position:-15px -266px;
+}
+.item_sub .img.gamelx11{
+	height:24px;
+	margin-top:3px;
+	background-position:-15px -296px;
+}
+.item_sub .img.gamelx12{
+	background-position:-15px -328px;
+	margin-top:8px;
+}
+.img.gamelx13{
+	background-position:-15px -350px;
+}
+.img.gamelx14{
+	background-position:-15px -374px;
+}
+.img.gamelx15{
+	background-position:-15px -400px;
+}
+.item_sub .img.gamelx16{
+	background-position:-15px -423px;
+	height:24px;
+	margin-top:4px;
+}
+.img.gamelx17{
+	background-position:-15px -452px;
+}
+.img.gamelx18{
+	background-position:-15px -481px;
+}
+.img.gamelx19{
+	background-position:-15px -505px;
+}
+.img.gamelx20{
+	background-position:-15px -552px;
+}
+.img.gamelx21{
+	background-position:-15px -528px;
+}
+.img.gamelx22{
+	background-position:-15px -576px;
+}
+.img.gamelx23{
+	background-position:-15px -600px;
+}
+.img.gamelx24{
+	background-position:-15px -626px;
+}
+.img.gamelx25{
+	background-position:-15px -601px;
+}
+
+.img.gamelx27{
+	background-position:-15px -651px;
+}
+.item_sub .img.gamelx28{
+	height:20px;
+	background-position:-15px -676px;
+}
+.img.gamelx29{
+	background-position:-15px -705px;
+}
+
+.item_sub_num{
+	margin-right:15px;
+}
+.itemUl{
+	padding-left:10px;
+	padding-right:3px;
+}
+.itemUl li{
+	height:30px;
+	line-height:30px;
+	width:100%;
+	cursor:pointer;
+}
+.itemUl li span{
+	color:#b4b4b4;
+}
+.page_left_scroll_sub{
+    width: 8px;
+    margin-left:2px;
+    height:100%;
+	position:relative;
+
+}
+.page_left_scroll_sub_item{
+	width:8px;
+	position:absolute;
+	top:0;
+	left:0;
+	height:50px;
+	border-radius:20px;
+	background-color:#4B4B4B;
+}
+.page_content_sub_parent{
+	position:relative;
+	width:775px;
+	height:100%;
+	overflow:hidden;
+}
+.page_content_scroll_box {
+	height:100%;
+}
+.change_box_nav{
+	
+	
+}
+.page_table_box table{
+	color:#C8C8C8;
+	background-color:#4B4B4B;
+	border:0;
+	border:none;
+	border-top:1px solid #616161;
+	margin-top:1px;
+	border-collapse:collapse;
+	width:100%;
+}
+.page_table_box table tr th{
+	text-align:center;
+	color:#A5A5A5;
+	height:24px;
+	font-family:sans-serif;
+	font-size:12px;
+	font-weight:normal;
+}
+.page_content_pl_html{
+	font-family:sans-serif;
+}
+.time_lx_html{
+	color:#FFF;
+	font-size:15px;
+	font-family:sans-serif;
+}
+.game_lx_html{
+	color:#FFF;
+	font-size:15px;
+	font-weight:bold;
+	margin-left:14px;
+	font-family:sans-serif;
+}
+.lx{
+	height:40px;
+	line-height:40px;
+	text-indent:6px;
+	font-size:14px;
+	color:#C4C4C4;
+
+}
+.lx:hover{
+	opacity:0.9;
+	filter:alpha(opacity=90);
+}
+.lx_sc,.td_sc{
+	background-image:url("../images2/cion.png");
+	background-position:-42px -47px;
+	background-repeat:no-repeat;
+	display:block;
+	width:17px;
+	height:17px;
+	cursor:pointer;
+	margin-top:9px;
+	margin-right:12px;
+}
+.td_sc{
+	margin-top:0;
+	margin-right:0;
+	margin:0 auto;
+}
+.w50{
+	width:50px;
+}
+.w100{
+	width:100px;
+}
+.pk_num{
+	width:40px;
+	display:inline-block;
+}
+.bodan_table .odds{
+	padding:3px 1px;
+}
+.odds{
+	padding:3px 5px;
+	border-radius:3px;
+	font-weight:600;
+	color:#2d2d2d;
+}
+
+.pl_box table tr td{
+	text-align:center;
+	color:#2d2d2d;
+	height:23px;
+	padding:3px 0;
+	word-break:break-all;
+}
+
+.pl_box table tr td span.pk_num,.pl_box table tr td .time_color{
+	color:#B20001;
+}
+.time_color{
+	color:#B20001;
+}
+.bg01{
+	background-color:#FFFFFC;
+	border-bottom:1px solid #D9D9D9;
+}
+.bg02{
+	background-color:#EDEDED;
+	border-bottom:1px solid #D9D9D9;
+}
+.bg01:hover,.bg02:hover{
+	background-color:#FFF5E9;
+}
+
+.pl_box table tr .hj{
+	color:#8B8A8A;
+}
+
+.gname{
+	font-weight:bold;
+}
+.bd_header_title,.bodan_table,.lq_header_title{
+	table-layout:fixed;
+	border-collapse:collapse;
+}
+.lq_header_title th{
+	width:124px;
+	
+}
+.gj_lx_sub_gname{
+	margin-left:10px;
+	color:#5a5a5a;
+}
+.gj_lx_sub_odds_box{
+	margin-right:5px;
+	color:#000;
+	font-weight:bold;
+	font-family:'Microsoft YaHei';
+}
+/****  顶部导航部分 样式   ****/
+.panType_box,.pxType_box,.pageType_box{
+	display:none;
+	position:absolute;
+
+}
+.ls_content{
+	position:absolute;
+	top:0;
+	left:211px;
+	height:448px;
+	width:785px;
+	display:none;
+
+}
+.lsType_boxs_zhezhao{
+	background-color:#000;
+	opacity:0.3;
+	filter:(opacity=30);
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:3;
+	width:100%;
+	height:600px;
+}
+.lsType_box,.lsType_boxs{
+	
+	background-color:#4B4B4B;
+	
+}
+.lsType_boxs{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:4;
+	width:100%;
+}
+.change_menu{
+	width:100%;
+	line-height:37px;
+	position:relative;
+	height:37px;
+	background-color:#4B4B4B;
+}
+.all,.top_nav_sc{
+	height:24px;
+	line-height:24px;
+	padding:0 10px;
+	color:#959595;
+	background-color:#3C3C3C;
+	border-radius:3px;
+	display:block;
+	float:left;
+	cursor:pointer;
+	margin:6px;
+}
+.top_nav_sc{
+	background-image: url("../images2/cion.png");
+    background-position: -39px -391px;
+    background-repeat: no-repeat;
+    
+    cursor: pointer;
+    padding-left:25px;
+}
+.top_nav_sc.top_nav_left_active{
+	background-position:-34px -151px;
+}
+.top_nav_sc .sc_num{
+	color:#959595;
+}
+.top_nav_sc.top_nav_left_active .sc_num{
+	color:#fff;
+}
+.top_nav_left_active,.all:hover,.top_nav_sc:hover{
+	background-color:#828282;
+	color:#fff;
+}
+.top_nav_sc:hover .sc_num{
+	color:#fff;
+}
+.refresh{
+	height:24px;
+	line-height:24px;
+	margin:6px;
+	outline:none;
+	outline:0;
+	border:none;
+	border:0;
+	font-size:13px;
+	background-color:#3C3C3C;
+	cursor:pointer;
+	padding:0 4px;
+	color:#B5B5B5;
+}
+.refresh .refreshTime{
+	color:#fff;
+}
+.pan,.px,.ls,.page_num{
+	margin:6px;
+	position:relative;
+	z-index:3;
+}
+.ls{
+	position:static;
+}
+.pageType,.lsType,.pxType,.panType{
+	height:24px;
+	line-height:24px;
+	color:#B5B5B5;
+	background-color:#3C3C3C;
+	padding:0 25px 0 10px;
+	border-radius:3px;
+	cursor:pointer;
+	position:relative;
+}
+.pageType:hover,.lsType:Hover,.pxType:hover,.panType:hover{
+	background-color:#828282;
+	color:#fff;
+}
+.top_nav_sjx_top{
+	margin-left:5px;
+	border-style:solid;
+	border-width:0 6px 6px 6px;
+	border-color:transparent transparent #DCDCDC transparent;
+	float:right;
+	margin-top:9px;
+	margin-top:9px;
+	position:absolute;
+	top:0;
+	right:10px;	
+}
+.top_nav_sjx_bottom{
+	margin-left:5px;
+	border-style:solid;
+	border-width:6px 6px 0 6px;
+	border-color:#DCDCDC transparent transparent transparent;
+	float:right;
+	margin-top:9px;
+	position:absolute;
+	top:0;
+	right:10px;	
+
+}
+.panType_box,.pxType_box,.pageType_box{
+	width:100%;
+	background-color:#828282;
+	color:#fff;
+	z-index:4;
+}
+.panType_text,.pxType_text,.pageType_text{
+	padding-left:10px;
+	color:#fff;
+	height:21px;
+	line-height:21px;
+	cursor:pointer;
+	z-index:3;
+	position:relative;
+}
+.panType_text:hover,.pxType_text:hover,.pageType_text:Hover{
+	background-color:#3C3C3C;
+}
+.ls_name_box_item{
+	position:relative;
+	height:300px;
+	overflow:hidden;
+}
+.ls_name_box{
+	margin-left:10px;
+	position:absolute;
+	top:0;
+	left:0;
+	width:750px;
+}
+.ls_name_scroll_box {
+	height:100%;
+}
+.lx_name_scroll_sub{
+	width:10px;
+	margin-right:2px;
+	position:relative;
+	height:100%;
+}
+.lx_name_scroll_sub_item{
+	width:100%;
+	height:40px;
+	border-radius:20px;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#2d2d2d;
+}
+.all_ls{
+	height:30px;
+	background-color:#555;
+	line-height:30px;
+	padding-left:3px;
+}
+.ls_name{
+	width:33.3%;
+	float:left;
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.lsBtn{
+	text-align:center;
+	background-color:#555;
+}
+.lsBtn_choose_no,.lsBtn_choose_ok{
+	width: 60px;
+	height: 25px;
+	line-height:25px;
+	background-color:#FF851D;
+	color:#fff;
+    margin: 6px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  
+}
+.all_ls label{
+	color:#fff;
+	cursor:pointer;
+}
+.all_ls label input[type=checkbox]{
+	margin-right:3px;
+}
+.ls_name_box .ls_name span{
+	color:#fff;
+}
+.ls_name_box .ls_name input[type=checkbox]{
+	margin-right:3px;
+}
+.close_lsType_box{
+	background: url(./public/ico01.png) 1px -910px;
+    width: 19px;
+    height: 19px;
+    margin-right: 6px;
+    margin-top: 5px;
+    cursor: pointer;
+	transition:transform .5s;
+	-webkit-transition:transform .5s;
+	-o-transition:transform .5s;
+	-moz-transition:transform .5s;
+	-ms-transition:transform .5s;
+	transform-origin:50% 50%;
+	-webkit-transform-origin:50% 50%;
+	-moz-transform-origin:50% 50%;
+	-o-transform-origin:50% 50%;
+	-ms-transform-origin:50% 50%;
+}
+.close_lsType_box:hover{
+	transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+}
+
+.one_week{
+	height:35px;
+	line-height:35px;
+	margin-top:2px;
+	background-color:#323232;
+}
+.prev{
+	margin-left:6px;
+}
+.next{
+	margin-right:6px;
+}
+.date_content_box{
+	float:left;
+	overflow:hidden;	
+	height:35px;
+	line-height:35px;
+	width:100%;
+	
+}
+.date_content{
+	margin: 0 auto;
+}
+.date_content li{
+	margin:0 7px;
+	font-size:12px;
+	color:#787878;
+	cursor:pointer;
+	
+}
+.date_content li:hover{
+	color:#fff;
+}
+.date_content li.date_active{
+	color:#fff;
+}
+.td_sc{
+	cursor:pointer;
+}
+.scClass{
+	color:#FE9200;
+}
+table{
+	table-layout:fixed;
+}
+.page_content_scroll_sub{
+	width: 8px;
+    margin-left:2px;
+    position: relative;
+	height:100%;
+}
+.page_content_scroll_sub_item{
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#4B4B4B;
+	border-radius:20px;
+	width:8px;
+	height:80px;
+}
+.more_play{
+	border-radius:2px;
+	padding:2px 4px;
+	cursor:pointer;
+	color:#5b5b5b;
+	font-size:12px;
+	margin-top:4px;
+	background-color:#f5f5f5;
+	border:1px solid #5b5b5b;
+}
+.more_play:hover{
+	background-color:#424242;
+	color:#fff;
+}
+/***左侧正在下注单样式****/
+.page_left_nowList_title{
+	height:40px;
+	line-height:40px;
+	background-color:#4B4B4B;
+	color:#fff;
+	font-size:14px;
+	text-indent:8px;
+}
+.page_left_nowList_content{
+	margin-top:4px;
+	font-size:13px;
+	color:#939393;
+}
+.nowList_title{
+	
+	height:30px;
+	line-height:30px;
+	margin:2px 8px;
+}
+.nowList_title_text{
+	color:#939393;
+	font-size:13px;
+}
+.nowList_name{
+	color:#fff;
+	margin-left:8px;
+	margin-bottom:8px;
+}
+.betPl{
+	color:#00B9AF;
+}
+.nowList_gname{
+	margin-left:8px;
+	font-size:13px;
+	margin-top:3px;
+}
+.nowList_gname>span{
+	white-space:nowrap;
+	margin-right:2px;
+	font-size:13px;
+	color:#939393;
+}
+.nowList_gname>span.active{
+	color:#b26a00;
+}
+.betMoney_box,.yingli_box{
+	width:82px;
+	height:30px;
+	border-radius:2px;
+}
+
+.betMoney_box>input,.yingli_box>input{
+	height:22px;
+	width:74px;
+	padding-left:4px;
+	padding-right:4px;
+	margin-top:4px;
+	outline:none;
+	border:0;
+	border:none;
+}
+.betMoney_box,.betMoney_box>input{
+	background-color:#fff;
+}
+.yingli_box,.yingli_box>input{
+	background-color:#D7EBBE;
+}
+.betMoney_box:hover,.betMoney_box:hover>input{
+	background-color:#E0E0E0;
+}
+.yingli_box:hover,.yingli_box:hover>input{
+	background-color:#BECFA9;
+}
+
+.nowList_bottom_moneyRange{
+	margin:5px 8px;
+}
+.nowList_minmoney_box,.nowList_maxmoney_box{
+	height:20px;
+	line-height:20px;
+	color:#70717C;
+	font-size:13px;
+	width:100%;
+}
+.nowList_minmoney_box>span,.nowList_maxmoney_box>span{
+	font-size:13px;
+	color:#70717c;
+}
+.nowList_btn>div{
+	margin:5px 8px;
+}
+.nowList_btn>div input{
+	height:30px;
+	line-height:30px;
+	border:0;
+	border:none;
+	outline:none;
+	font-size:14px;
+	color:#fff;
+	width:100%;
+	background-color:#6aa88c;
+	border-radius:2px;
+	cursor:pointer;
+}
+.nowList_btn>div input.nowList_btn_no,.nowList_btn>div input.nowList_btn_confirm_no{
+	color:#949494;
+	background-color:#5A5A5A;
+}
+
+.nowList_input_box{
+	margin:10px 8px;
+}
+.nowList_btn>div input.nowList_btn_no:Hover,.nowList_btn>div input.nowList_btn_confirm_no:hover{
+	background-color:#535353;
+}
+.nowList_btn>div input.nowList_btn_ok:hover,.nowList_btn>div input.nowList_btn_confirm_ok:hover{
+	background-color:#00A4FF;
+}
+.close_nowList_nogg{
+	background-image:url("../images2/cion.png");
+	background-position:-40px -105px;
+	width:21px;
+	height:21px;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	margin-top:3px;
+	transition:transform .5s;
+	-webkit-transition:transform .5s;
+	-o-transition:transform .5s;
+	-ms-transition:transform .5s;
+}
+.close_nowList_nogg:hover{
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+
+.page_left_nowList_nogg_confirm{
+	display:none;
+}
+.nogg_nowList_alert_info{
+	margin:3px 8px;
+	text-align:center;
+	color:#E1830C;
+	font-size:13px;
+}
+
+.nowList_betStatus_0{
+	margin:3px 8px;
+	color:#00B9B1;
+	font-size:14px;
+	text-align:center;
+}
+.nowList_betStatus_-1{
+	color:#FF6600;
+	margin:3px 8px;
+	font-size:14px;
+	text-align:center;
+}
+.checkBetStatusTime{
+	color:#FF6600;
+}
+.nowList_betStatus_0_bg{
+	display:inline-block;
+	width:12px;
+	height:10px;
+	background-image:url("../images2/cion.png");
+	background-repeat:no-repeat;
+	background-position:-43px -27px;
+}
+.close_page_left_nowList_btn,.oddsChange_btn_confirm_ok,.toggleResult_confirm_btn{
+	border:0;
+	border:none;
+	outline:none;
+	width:194px;
+	height:30px;
+	margin:3px 8px;
+	color:#fff;
+	background-color:#00B9B1;
+	border-radius:2px;
+	font-size:14px;
+	cursor:pointer;
+	text-align:center;
+}
+.close_page_left_nowList_btn:hover,.oddsChange_btn_confirm_ok:hover{
+	background-color:#00A4FF;
+}
+.toggleResult_confirm_btn{
+	background-color:#5A5A5A;
+}
+.toggleResult_confirm_btn:hover{
+	background-color:#535353;
+}
+
+.betOddsChange{
+	color:#FF9200;
+}
+.bet_quick_btn{
+	background-color:#787777;
+	padding:8px 0;
+	
+}
+.bet_quick_btn_box{
+	text-align:center;
+	margin-bottom:5px;
+}
+.clear_money{
+	margin-left:10px;
+	
+	font-size:13px;
+	color:#373737;
+	cursor:pointer;
+}
+.clear_money:hover{
+	text-decoration:underline;
+}
+.bet_quick_btn button{
+	margin:0;
+	padding:0;
+	outline:none;
+	border:none;
+	width:59px;
+	height:30px;
+	border-radius:3px;
+	background-color:#d4d4d4;
+	cursor:pointer;
+	text-align:center;
+	line-height:30px;
+	color:#CE8800;
+	margin:2px 3px;
+}
+.systemAlert{
+	width:220px;
+	height:60px;
+	text-align:center;
+	font-size:13px;
+	color:#01B9B1;
+	background-color:rgba(0,0,0,0.9);
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-110px;
+	margin-top:-30px;
+	z-index:60;
+}
+.alert_box_sub_content_item .systemAlert{
+	
+	position:static;
+	color:#FF002A;
+	font-size:13px;
+	background-color:#F2F2F2;
+	margin-left:0;
+	margin-top:0px;
+	padding-top:20px;
+	text-align:center;
+	z-index:0;
+	width:100%;
+
+
+}
+.page_left_nowList_content_sub{
+	background-color: #373737;
+    padding-bottom: 5px;
+    margin: 1px 0;
+}
+
+
+
+.more_play_zhezhao{
+	position:fixed;
+	top:72px;
+	left:209px;
+	width:100%;
+	height:100%;
+	background-color:#000;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+	z-index:9;
+}
+.more_play_content_header{
+	height:35px;
+	line-height:35px;
+	background-color:#609EE9;
+	cursor:move;
+	position:relative;
+}
+.more_play_content_header span{
+	color:#fff;
+	font-size:15px;
+	margin-left:3px;
+	margin-right:3px;
+}
+.more_play_content{
+	position:absolute;
+	top:200px;
+	left:250px;
+	width:700px;
+	z-index:10;
+	background-color:#2D2D2D;
+}
+.more_play_content_sub{
+	width:685px;
+	height:300px;
+	float:left;
+	overflow:hidden;
+	position:relative;
+}
+.more_play_sub_item{
+	position:absolute;
+	top:0;
+	left:0;
+}
+.more_play_content_sub_item>div{
+	
+	margin-top:3px;
+}
+.more_play_content_sub  .more_play_sub_name{
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	color:#9F9F9F;
+}
+.close_more_play_box{
+	width:16px;
+	height:16px;
+	background-image:url("../images2/cion.png");
+	background-repeat:no-repeat;
+	background-position:-47px -320px;
+	position:absolute;
+	top:9px;
+	right:10px;
+	cursor:Pointer;
+}
+
+.more_play_content_sub div table{
+	width:100%;
+	table-layout:fixed;
+	margin-top:2px;
+}
+.more_play_content_sub div table thead{
+	background-color:#4B4B4B;
+}
+.more_play_content_sub div table thead th{
+	color:#A8A8A8;
+	font-size:13px;
+	padding:1px 0;
+}
+.more_play_content_sub div table tbody{
+	background-color:#fff;
+}
+.more_play_content_sub div table tbody td{
+	color:#504C4D;
+	text-align:center;
+	padding:5px 0px;
+}
+.more_play_scroll_sub{
+	width:9px;
+	margin:0 3px;
+	height:300px;
+	position:relative;
+}
+.more_play_scroll_sub_item{
+	width:100%;
+	height:180px;
+	border-radius:15px;
+	background-color:#4B4B4B;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.user_choose_beting_rule span{
+	font-size:14px;
+	cursor:pointer;
+}
+.accept_better_odds_btn,.isShow_confirm_beting_btn{
+	width:15px;
+	height:15px;
+	background-image:url("../images2/cion.png");
+	display:inline-block;
+	background-position:-49px -341px;
+}
+.accept_better_odds_btn.true,.isShow_confirm_beting_btn.true{
+	background-position:-49px -363px;
+}
+
+
+/********gj odds**************/
+
+.lx_sub_text{
+	height:35px;
+	line-height:35px;
+	text-indent:5px;
+	font-size:14px;
+	background-color:#f5f5f5;
+	color:#5a5a5a;
+	text-align:center;
+}
+.gj_table .gj_left_div{
+	border-right:1px solid #D7D7D7;
+
+}
+.gj_table td{
+	height:28px;
+	line-height:28px;
+}
+
+/******* page_right *****************/
+.page_right_ewm_box{
+	padding:2px 0;
+	background-color:#4B4B4B;
+	width:100%;
+}
+.page_right_banner,.page_right_ewm{
+	display:block;
+	margin:0 auto;
+	margin-bottom:5px;
+}
+
+
+.confirm_bet_info_box{
+	padding-top:20px;
+}
+
+.load{
+	position:fixed;
+	top:50%;
+	left:50%;
+	width:200px;
+	height:150px;
+	border-radius:3px;
+	margin-left:-100px;
+	margin-top:-75px;
+	background-color:#F2F2F2;
+	z-index:51;
+	text-align:center;
+}
+.load img{
+	margin-top:30px;
+}
+
+.betStatus{
+	margin-top:6px;
+	padding:0 5px;
+	font-size:13px;
+}
+.bet_status{
+	height:30px;
+	line-height:30px;
+	background-color:#4b4b4b;
+	text-align:center;
+	font-weight:bold;
+}
+.bet_status_0{
+	color:#6AA88C;
+}
+.bet_status_-1{
+	color:#F0AD4E;
+}
+.bet_status_3{
+	color:#DD524D;
+}
+.betStatus>div{
+	height:28px;
+	line-height:28px;
+}
+.bet_status_btn_close{
+	outline:none;
+	border:none;
+	border:0;
+	width:100%;
+	height:30px;
+	color:#fff;
+	line-height:30px;
+	cursor:pointer;
+	background-color:#6AA88C;
+	border-radius:3px;
+}
+.showSportMenu{
+	padding-left:30px;
+	font-size:16px;
+	
+	color:#7D7D7D;
+	background-color:#CBCBCB;
+	height:40px;
+	line-height:40px;
+	background-image:url(../images2/cion.png);
+	background-position:-40px -410px;
+	background-repeat:no-repeat;
+	letter-spacing:2px;
+	margin-bottom:5px;
+	cursor:pointer;
+}
+.beenList_sub_item{
+	background-color:#373737;
+	margin-bottom:3px;
+	padding:10px 8px;
+	font-size:13px;
+
+}
+.beenList_sub_item_bet_money,.beenList_sub_item_status{
+	color:#E46459;
+}
+.beenList_sub_item_select_info,.beenList_sub_item_bet_pl{
+	color:#FFF5E9;
+}

@@ -1,0 +1,98 @@
+.main-width{
+    width: 1000px;
+    border: 1px solid #d2d2d2;
+    margin: 30px auto;
+    border-collapse:collapse;
+}
+.main-width .shadow{
+    background-position: center;
+    background: url("../images/yinying.png") bottom no-repeat;
+    padding: 0 40px 10px;
+    background-position-x: 5px;
+}
+.main-width .shadow:nth-last-child(1){
+    background: none;
+    padding-bottom:0;
+}
+.main-width .shadow ul{
+    width: 33.33%;
+    text-align: center;
+    font-size: 13px;
+    color:#747272;
+    margin: 25px 0;
+}
+.main-width .shadow ul li{
+    line-height: 30px;
+}
+.main-width .shadow ul li:nth-child(1){
+    font-size: 14px;
+    color:#c97900;
+    font-weight: bold;
+}
+.main-width .shadow ul li>input{
+    margin: 0 5px 0 0 ;
+}
+.main-width .shadow .title{
+    font-size: 14px;
+    color: #353535;
+    font-weight: bold;
+    line-height: 60px;
+}
+.main-width .shadow .main-content{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.main-width .shadow .main-content .main-img{
+    width: 161px;
+    height: 81px;
+    box-shadow: 0px 0 3px 2px #e0e0e0;
+    padding: 2px;
+}
+.main-width .shadow .main-content .main-img img{
+    width: 100%;
+    height: 100%;
+}
+.main-width .shadow .main-content .main-font{
+    width: 730px;
+    margin-left: 25px;
+    font-size: 13px;
+    color:#747272;
+    line-height: 25px;
+}
+.main-width .shadow .main-content .main-font p:nth-child(1){
+    line-height: 30px;
+    font-weight: bold;
+    color: #353535;
+}
+.main-width .shadow .main-content>p{
+    font-size: 13px;
+    color:#747272;
+    line-height: 25px;
+}
+.main-width .shadow .main-content>p button{
+    background: #f9efe0;
+    border: 1px solid #e9dcbe;
+    color : #e18700;
+    line-height: 20px;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+.main-width .shadow .main-content>table{
+    border-collapse:collapse;
+    font-size: 13px;
+    color: #747272;
+}
+.main-width .shadow .main-content>table th{
+    min-width: 100px;
+    border: 1px solid #d2d2d2;
+    line-height: 35px;
+    color: #515050;
+}
+.main-width .shadow .main-content>table td{
+    border: 1px solid #d2d2d2;
+    text-align: center;
+    padding: 8px;
+}
+.main-width .shadow .main-content>table td:nth-last-child(1){
+    text-align: left;
+}

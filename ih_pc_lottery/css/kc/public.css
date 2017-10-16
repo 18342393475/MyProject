@@ -1,0 +1,375 @@
+/* CSS Document */
+/*公共样式*/
+input{ outline:none;}
+body{ background-image:url('images/lottery_bg.jpg');}
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, textarea, p, blockquote, tr,th, td{margin:0; padding:0; font-family:Arial,'微软雅黑', sans-serif; font-size:62.5%;}
+table,th,tr,td{font-size:12px;border-collapse:collapse; border-spacing:0;border-color:rgb(176, 190, 204);}
+input{margin:1px 2px;}
+button{border-style:none; background-color: transparent; cursor:pointer; text-align:center; margin:3px 20px 3px 0px}
+fieldset, img{border:0}
+address, caption, cite, code, dfn, em, strong, th, var{font-style:normal; font-weight:normal;}
+ol, ul{list-style:none}
+caption, th{text-align:left}
+h1, h2, h3, h4, h5, h6{font-size:100%; font-weight:normal}
+q:before, q:after{content:''}
+abbr, acronym{border:0; position:relative}
+.winBox{min-width:850px;}
+.fl{float: left;}
+.fr{float: right;}
+.ml2{margin-left: 2px;}
+.mr2{margin-right: 2px;}
+.psrt{position: relative;}
+.psal{position: absolute;}
+.red{color: #dd0000;}
+.dpn{display: none}
+.dpb{display: block}
+.ti{text-indent: -9999px;}
+.cs{cursor: pointer;}
+a{text-decoration: none;}
+
+.home{display:inline-block;float:left;position:relative;width:40px;height:40px;background:rgb(0,0,0) url(public/home.png) center center no-repeat;opacity:.9;filter:Alpha(opacity=90);cursor:pointer;border-radius: 50%;}
+.home-con{display:none;position:absolute;margin-left:40px;width:500px;}
+.home-con a{background:rgb(0,0,0);width:70px;height:40px;line-height:40px;text-align:center;color: #802C00;font-size: 14px;font-weight: bold;float:left;display:block;padding-right:5px;}
+.home-con a:hover{background: #666363;color: #fff;}
+.home-icon:hover{border-top-right-radius: 0px;border-bottom-right-radius: 0px;opacity:1;filter:Alpha(opacity=100);}
+.home:hover .home-con{display:block;}
+
+
+
+
+/*注单样式*/
+.orderTitleObj{ color:#666; font-size:14px}
+.betObj{ color:#00A2BC;}
+.betPlObj{ color:#00A603; font-weight:bold }
+.betMoneyObj{ color:#FF7400; }
+.winMoneyObj{ color:#FF7400; font-weight:bold}
+.loseMoneyObj{color:#999}
+.panTypeObj{ color:#999}
+.betTimeObj{color:#999}
+.pkNumObj{ font-weight:bold; color:#263643}
+.warnObj{ color:#c00;}
+.wjsObj{color:#999}
+.lxObj{ font-size:13px;color:#7B3737}
+.bfObj{color:#999}
+.gameTimeObj{color:#999}
+.WxqStatus-1{ color:#F60; font-weight:bold}
+.WxqStatus0{ color:#060; font-weight:bold}
+.WxqStatus1{ color:#900; font-weight:bold}
+
+
+#userDataBox span{display: inline-block; height: 30px;line-height: 30px;}
+#userDataBox .userName{margin-right: 20px;}
+#leftMenuBox ul li{text-align: center; cursor: pointer; margin-top: 15px; font-weight: bold; position: relative;}
+#leftMenuBox .menuStyle{color: #eee;}
+#leftMenuBox .menuBG{position: absolute; top: 12px; right: -3px; display: inline-block; width: 9px; height: 13px;}
+
+
+
+/*遮罩层*/
+#alertOverlay{position:fixed; width: 100%; height: 100%; top: 0;left: 0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";filter:alpha(opacity=75);-moz-opacity: 0.75;background:#000 url(public/opacity75.png) repeat;opacity: 0.75;z-index: 1000;}
+.maskTitle{height: 25px;line-height: 25px;text-align: center;color: #fff;}
+.maskContent{padding: 10px 5px;text-align: center;background: #fff;border: 1px solid #999;border-bottom: 0;}
+.maskBtn{text-align: center;background: #fff;border: 1px solid #999;border-top: 0;}
+.maskBtn button{margin: 0 5px 5px 5px;font-size: 12px;width: 45px;height: 20px;cursor: pointer;border: 0;color: #fff;}
+
+#maskBox{border-radius:3px;min-width: 50px; overflow: hidden; position: absolute; z-index: 10001; font-size: 12px; top: 0; left: 0; display:none;}
+#maskBox table{border-collapse: collapse;border-spacing: 0;border-top: 1px solid #4C8DC9;border-bottom: 3px solid #2E6291;border-left: 3px solid #2E6291;border-right: 3px solid #2E6291;}
+#maskBox .tr1 .td1{ height:26px;background:#336797;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#336797', endColorstr='#336797', GradientType='0'); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#336797', endColorstr='#336797',GradientType='0')"; /* IE8 */
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#336797),to(#336797));
+    background-image: -webkit-linear-gradient(#336797,#336797);
+    background-image: -moz-linear-gradient(#336797,#336797);
+    background-image: -ms-linear-gradient(#336797,#336797);
+    background-image: -o-linear-gradient(#336797,#336797);
+    background-image: linear-gradient(#336797,#336797);
+}
+#maskBox .tr1 .td1 .titleBox{ float: left;color:#EDF9FF;line-height: 25px;font-size: 12px;margin-left: 10px;font-weight: bold;}
+#maskBox .tr1 .td1 .titleClose{border-radius: 3px;float: right;background: #3F81B8;cursor: pointer;margin-right: 0px;color: #ccc;font-weight: bold;padding: 3px 8px;margin-top: 1px;border: 1px solid #28629B;}
+#maskBox .tr2 .td1{ background:#FFF; line-height:24px; min-width:300px; text-align:center;}
+
+#maskBox .alertImg{ background:url('public/ico.png'); width:45px; height:60px; margin:10px auto}
+#maskBox .confirm{ background-position: -629px -56px; }
+#maskBox .warn{ background-position: -463px -56px; }
+#maskBox .error{ background-position: -575px -56px; }
+#maskBox .success{ background-position: -519px -56px; }
+#maskBox .loading{height:auto !important;height:60px;}
+#maskBox .alertInfo{ text-align:center; color:#999; font-size:14px; width:100%;margin-bottom:20px;}
+#maskBox .tr2 .td1{padding-top: 20px; }
+
+#maskBox .pageBox{
+    background:#C3D5E2;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#9BBDD5));
+    background-image: -webkit-linear-gradient(#fff,#9BBDD5);
+    background-image: -moz-linear-gradient(#fff,#9BBDD5);
+    background-image: -ms-linear-gradient(#fff,#9BBDD5);
+    background-image: -o-linear-gradient(#fff,#9BBDD5);
+    background-image: linear-gradient(#fff,#9BBDD5);
+    height:100%;max-width:900px; max-height:500px;overflow:auto;overflow-x:hidden; }
+#maskBox .pageBox .tabBox{width:900px; background:#DADFE5; height:25px; text-align:left}
+#maskBox .pageBox .tabBox li{ float:left; padding:0px 20px; height:26px; cursor:pointer}
+#maskBox .pageBox .tabBox .active, .reportBox .tabBox li:hover{ background:#FFF; color:#FFC64F; font-weight:bold}
+#maskBox .pageBox table{ border-width:1px; border-color: #999; border-collapse: collapse; color:#333333; background-color: #fff; width:100%; }
+#maskBox .pageBox table th{ border-width: 1px; border-style: solid; border-color: #C6CACF; text-align:center; background:#F5F2EA;padding: 4px; font-weight:bold; color:#3E596E}
+#maskBox .pageBox table td {border-width: 1px; border-style: solid; border-color: #C6CACF; padding: 4px; color:#263643}
+#maskBox .pageBox table .trBG{ background:#F0F7FE}
+#maskBox .pageBox table .hover{cursor:pointer;}
+#maskBox .pageBox table .TAL{ text-align:left}
+#maskBox .pageBox table .warnColor{ color:#FF9D08; font-size:13px}
+#maskBox .pageBox table .subRow{border-bottom:dashed #DFE3E8 1px;}
+#maskBox .pageBox a{ color:#07A8FE; font-size:14px;text-decoration:none;}
+#maskBox .pageBox a:hover{ color:#FFC64F;}
+
+/*浮动层*/
+.floatBox1{position:absolute;width:600px; display:none; font-size:12px }
+.floatBox1 .tr1 .td1{background:url('public/floatBox01-1-1.png'); width:8px; height:32px}
+.floatBox1 .tr1 .td2{background:url('public/floatBox01-1-2.png');}
+.floatBox1 .tr1 .td2 .titleBox{ float:left;font-weight:bold; color:#C5E0EE;line-height: 30px}
+.floatBox1 .tr1 .titleClose{border-radius:5px;float:right; background:url('public/floatBox01-close.png') no-repeat; width:20px; height:22px; cursor:pointer;}
+.floatBox1 .tr1 .td3{background:url('public/floatBox01-1-3.png'); width:20px; }
+.floatBox1 .tr2 .td1{background:url('public/floatBox01-2-1.png'); width:8px;}
+.floatBox1 .tr2 .td2{ background:#FFF; line-height:24px}
+.floatBox1 .tr2 .td3{background:url('public/floatBox01-2-3.png');}
+.floatBox1 .tr3 .td1{background:url('public/floatBox01-3-1.png'); width:8px; height:22px}
+.floatBox1 .tr3 .td2{background:url('public/floatBox01-3-2.png'); }
+.floatBox1 .tr3 .td3{background:url('public/floatBox01-3-3.png'); width:20px;}
+
+.floatBox1 .moreTable{ width:100%; background-color:#EFEFEF;color:#222;}
+.floatBox1 .moreTable td{width:5%;border:1px solid #CFCFCF; text-align:center}
+.floatBox1 .moreTable .titletd1{ text-align:left; padding-left:6px;color:#333; font-weight:bold;border-right:1px solid #DFDFDF; background-color:#DFDFDF}
+.floatBox1 .moreTable .titleTd2{background-color:#DFDFDF;}
+.floatBox1 .moreTable .winSubLx{text-align:left; font-weight:bold; background-color:#E9E9E9;color:#444;padding-left:4px}
+.floatBox1 .moreTable .winGname{text-align:left;width:40%;padding-left:4px;border-right:0px solid #CFCFCF;}
+.floatBox1 .moreTable .winPl{width:10%;border-left:0px solid #CFCFCF;}
+.floatBox1 .moreBt{position:relative;cursor:pointer;width:5%}
+.floatBox1 a{color:#3E1F00;text-decoration:none;font-size:12px;font-weight:bold;font-family:"Times New Roman", Times, serif;}
+.floatBox1 a:hover{color:#3E1F00;text-decoration:none;font-size:12px;font-weight:bold;font-family:"Times New Roman", Times, serif;}
+
+
+
+/********************************************************************************************************************************/
+.submitBtn{background:url('public/ico.png') -57px -155px; width:49px; height:27px; margin:10px 10px; cursor:pointer; color: #8C692E;}
+.submitBtn:hover{ color:#E02709}
+.backBtn{ background:url('public/ico.png') -112px -155px; width:49px; height:27px; margin:10px 10px cursor:pointer; color: #606060;}
+.backBtn:hover{color:#909090}
+
+#topNavi{ width:100%; overflow:hidden; min-width:1002px}
+#topNavi #logoBox{ float:left; background:url('public/logo_2.png') center no-repeat; width:180px; height:56px; margin:10px 10px;}
+#topNavi #topMenuBox{ float:left; width:835px}
+#topNavi #topMenuBox #topTimeLxMenu{ width:100%; height:50px; margin-left:5px}
+#topNavi #topMenuBox #topTimeLxMenu ul{ line-height:39px; float:left; height:39px;}
+#topNavi #topMenuBox #topTimeLxMenu .firstUl{ width:25px; background:url('public/ico.png') -8px 0px;}
+#topNavi #topMenuBox #topTimeLxMenu .rightUl{ width:15px; background:url('public/ico.png') -21px 0px;}
+#topNavi #topMenuBox #topTimeLxMenu .leftUl{ width:15px; background:url('public/ico.png') -780px 0px;}
+#topNavi #topMenuBox #topTimeLxMenu .midUl{background:url('public/ico.png') -45px 0px;}
+#topNavi #topMenuBox #topTimeLxMenu .lastUl{ width:25px; background:url('public/ico.png') -783px 0px;}
+#topNavi #topMenuBox #topTimeLxMenu .linkBox{}
+#topNavi #topMenuBox #topTimeLxMenu .linkBox li{ color:#c7c6c6; font-size:12px; font-weight:normal; width:40px; padding:0px 4px}
+#topNavi #topMenuBox #topTimeLxMenu .linkBox li:hover{ color:#ffc64f; font-weight:bold}
+#topNavi #topMenuBox #topTimeLxMenu li{ padding:0 8px; text-align:center; float:left; cursor:pointer; color:#802C00; font-size:14px; font-weight:bold;}
+#topNavi #topMenuBox #topTimeLxMenu li:hover{ color:#c02C00}
+#topNavi #topMenuBox #topTimeLxMenu .active{background:url('public/ico.png') 0px -109px;border-left: solid #6D3A25 1px; border-right: solid #6D3A25 1px; border-bottom:solid #6D3B24 1px}
+#topNavi #topMenuBox #topTimeLxMenu .backTOP{ background:url('public/ico.png') -428px -65px no-repeat; width:60px; height:20px; margin:10px 0px; padding-left:20px; line-height:20px }
+
+#topNavi #topMenuBox #topTabBox{ padding-left:30px; border-right:solid #6D3A24 1px; font-size:14px; color:#7F2D00}
+
+#topNavi #topMenuBox #topTabBox li{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEE06E', endColorstr='#FF9D08', GradientType='0'); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEE06E', endColorstr='#FF9D08',GradientType='0')"; /* IE8 */
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#FEE06E),to(#FF9D08));
+    background-image: -webkit-linear-gradient(#FEE06E,#FF9D08);
+    background-image: -moz-linear-gradient(#FEE06E,#FF9D08);
+    background-image: -ms-linear-gradient(#FEE06E,#FF9D08);
+    background-image: -o-linear-gradient(#FEE06E,#FF9D08);
+    background-image: linear-gradient(#FEE06E,#FF9D08);
+    cursor:pointer; height:28px; line-height:28px; padding:0px 6px; color:#7F2D00;font-size:13px; border-top-right-radius: 4px;border-top-left-radius: 4px;margin-left: 2px;
+}
+
+#topNavi #topMenuBox #topTabBox .ulX li{ float:left; border-right:0px}
+#topNavi #topMenuBox #topTabBox .ulY{ position:absolute; display:none; top:54px; right:0px;}
+#topNavi #topMenuBox #topTabBox .ulY li{ border-top:0px;}
+
+#topNavi #topMenuBox #topTabBox li:hover{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#798C9A', endColorstr='#607D8D', GradientType='0'); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#798C9A', endColorstr='#607D8D',GradientType='0')"; /* IE8 */
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#798C9A),to(#607D8D));
+    background-image: -webkit-linear-gradient(#798C9A,#607D8D);
+    background-image: -moz-linear-gradient(#798C9A,#607D8D);
+    background-image: -ms-linear-gradient(#798C9A,#607D8D);
+    background-image: -o-linear-gradient(#798C9A,#607D8D);
+    background-image: linear-gradient(#798C9A,#607D8D);
+    color:#FF9D08;background:#607D8D;
+}
+
+#topNavi #topMenuBox #topTabBox ul .active{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#798C9A', endColorstr='#607D8D', GradientType='0'); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#798C9A', endColorstr='#607D8D',GradientType='0')"; /* IE8 */
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#798C9A),to(#607D8D));
+    background-image: -webkit-linear-gradient(#798C9A,#607D8D);
+    background-image: -moz-linear-gradient(#798C9A,#607D8D);
+    background-image: -ms-linear-gradient(#798C9A,#607D8D);
+    background-image: -o-linear-gradient(#798C9A,#607D8D);
+    background-image: linear-gradient(#798C9A,#607D8D);
+    color:#CAD9E6; border-bottom:0px;
+}
+
+#midBox{width:100%; overflow:hidden; min-width:1020px;}
+
+
+#leftBox01{ width:230px; background:url('public/BG03.jpg');border-top-left-radius: 18px;  }
+#leftBox01 .leftTopBox{background:url('public/BG01.jpg'); }
+#rightBox .rightMenuBox{ height:30px; background-image: url('public/BG02.jpg') }
+#rightBox .mainDataBox{ background-image:url('images/lottery_bg.jpg');width:100%; padding:2px; border-top:solid #8DA6B4 1px; border-left:solid #8DA6B4 1px; border-bottom:solid #8DA6B4 1px;}
+
+#timeBox{ height:30px; font-size:12px; text-align:center; color:#FFF; line-height:30px; padding-left:10px; overflow:hidden}
+#userDataBox{ font-size:12px; color:#FFF;line-height:40px}
+#userDataBox .userNameBox{ background:url('public/ico.png') -190px -50px;}
+#userDataBox .userMoneyBox{ background:url('public/ico.png') -190px -50px;}
+
+#userDataBox ul{ padding-left:30px; overflow:hidden}
+#userDataBox ul:hover{ color:#F89013;}
+#userDataBox li{ font-size:12px;line-height:20px;   cursor:pointer;position:relative; }
+#userDataBox .moneyIcon{position:absolute;background:url('public/ico.png') -183px -132px; display:inline-block;width:18px; height:16px; }
+#userDataBox .userIcon{position:absolute;background:url('public/ico.png') -155px -132px;display:inline-block; width:16px; height:16px}
+#userDataBox li em{margin-left:25px;}
+
+#leftBodyBoxBorder{ width:196px; float:left; border:solid #567E9D 1px;}
+#leftBodyBox{ width:194px; background-color:#D9DFE6; border:solid #283A48 1px; color:#333; line-height:22px; overflow:auto; min-height:500px; }
+
+/*最近十注*/
+.orderList{color:#263643}
+.orderList .topTitle{font-size:12px;font-weight:bold; height:25px; line-height:25px; padding-left:6px; background:#ADC1CF;}
+.orderList dl{ padding:6px 6px; border-top:solid #F0F3F7 1px; border-bottom: solid #AEBBCA 1px; }
+.orderList dt{ font-weight:bold }
+.orderList dd{}
+.betWarnImg{background:url('public/ico.png') -463px -56px; width:45px; height:60px; margin:20px auto }
+.betWarnTxt{ color:#DF8717; font-size:13px; margin: -20px 30px; text-align:center}
+
+#leftMenuBox{ width:30px; float:left; float:left;}
+#leftMenuBox ul{ margin:20px 4px 0px 4px }
+#leftMenuBox ul li{ margin-bottom:10px; }
+#leftMenuBox ul div{ width:25px; height:40px; cursor:pointer }
+#leftMenuBox #hotEventBtn .unactive{ background:url('public/ico.png') -230px -157px;}
+#leftMenuBox #hotEventBtn .active, #leftMenuBox #hotEventBtn div:hover{background:url('public/ico.png') -268px -157px;}
+#leftMenuBox #orderBtn .unactive{ background:url('public/ico.png') -16px -53px;}
+#leftMenuBox #orderBtn .active, #leftMenuBox #orderBtn div:hover{background:url('public/ico.png') -218px -110px;}
+#leftMenuBox #accountBtn .unactive{background:url('public/ico.png') -55px -53px;}
+#leftMenuBox #accountBtn .active, #leftMenuBox #accountBtn div:hover{background:url('public/ico.png') -257px -110px;}
+#leftMenuBox #settingBtn .unactive{background:url('public/ico.png') -97px -53px;}
+#leftMenuBox #settingBtn .active, #leftMenuBox #settingBtn div:hover{background:url('public/ico.png') -299px -110px;}
+#leftMenuBox #logOutBtn .unactive{background:url('public/ico.png') -305px -157px;}
+#leftMenuBox #logOutBtn .active, #leftMenuBox #logOutBtn div:hover{background:url('public/ico.png') -337px -157px;}
+#leftMenuBox #messageBtn .unactive{background:url('public/ico.png') -378px -157px;}
+#leftMenuBox #messageBtn .active, #leftMenuBox #messageBtn div:hover{background:url('public/ico.png') -412px -157px;}
+#leftMenuBox #longBtn .unactive{background:url('public/ico.png') -141px -53px;}
+#leftMenuBox #longBtn .active, #leftMenuBox #longBtn div:hover{background:url('public/ico.png') -343px -110px;}
+#leftMenuBox .line{background:url('public/ico.png') -10px -99px; width:37px; height:4px; margin-left:-5px}
+
+#userInfoBox{}
+#userInfoBox dl{ border-bottom: 1px solid #BAC0C6; padding: 6px 6px; border-top: 1px solid #f0f0f0;}
+#userInfoBox dt{ line-height: 22px; color:#333; font-size:14px;}
+#userInfoBox dd{ line-height: 20px; color:#999; font-size:12px; overflow:hidden}
+#userInfoBox a{color:#6C6C6C; float:right;text-decoration:underline; float:left}
+#userInfoBox a:hover{color:#F89013;}
+#userInfoBox span{float:right}
+
+#userSettingBox{}
+#userSettingBox dl{border:1px solid #BAC0C6; margin:2px 2px 2px 2px;}
+#userSettingBox dt{line-height:25px; background:#E3E9F1; color:#6E757C; font-weight:bold; padding-left:3px}
+#userSettingBox dd input{ height: 20px; width: 184px }
+#userSettingBox dd #is_using, #userSettingBox dd #setValue2{height: 16px; width: 16px}
+#userSettingBox input{ color: #9C9C9C; border-style:none; line-height:16px }
+
+#modifyNicknameForm p{ margin:30px;}
+#modifyPasswordForm{ padding: 10px }
+#modifyPasswordForm dl{width: 100%;height: 40px}
+#modifyPasswordForm dt, #modifyPasswordForm dd{ float: left}
+#modifyPasswordForm dt{ width: 80px; text-align: right}
+#modifyPasswordForm .infoBox{ color: #999}
+
+#userLimitBox{ width: 100%;}
+#userLimitBox td{padding: 2px 4px}
+#userLimitBox th{ background: #D8DFE7; text-align: left; padding: 2px 4px }
+#userLimitBox .leftBox{ width: 15%; background: #DADFE5}
+#userLimitBox .leftBox li{ cursor: pointer; height: 25px; width: 100%}
+#userLimitBox .leftBox li:hover{ background:#E8F1FB }
+#userLimitBox .leftBox .active{ color:#FF9D08; font-weight: bold}
+
+#userLimitBox .rightBox{ width: 80%; background: #E8F1FB}
+#userLimitBox .rightBox table{ width: 100%}
+#userLimitBox .tr1{ background: #fff}
+
+/*快选金额*/
+#KXMoneyBox{position: absolute; width:44px; background:#f6f6f6; border:solid #999 1px; color:#333; font-weight:bold; display:none}
+#KXMoneyBox dd{cursor:pointer; padding:1px 2px; text-align:right}
+#KXMoneyBox dd:hover{ background:#FFF;color:#F60}
+#KXMoneyBox dt div{ border:solid #ccc 1px; background:#FFF; color:#999; cursor:pointer; padding:1px 2px; text-align:center}
+#FlashID{position:fixed; width:100px; height:100px; display:none }
+
+/*系统维护*/
+.upBox{ width: 520px; height: 350px; position: relative; margin:50px auto;text-align: center;}
+.upBox .upImg{ background:url('public/ico.png') 0px -200px; width: 520px; height: 130px;}
+.upBox .upMsg{ text-align:left;font-size:18px; color:#E6A229; margin:30px 0px;}
+.upBox .backHomeBtn{ background:url('public/ico.png') -598px -153px; width:128px; height:38px; cursor:pointer;border: hidden;}
+
+/*带图标的提示信息：<span class="Msg_Box_Xxxxx"></span><span class="info">XXXXX</span>*/
+.noData{ padding:40px; text-align:center;}
+.noData .info{display:block;font-size:20px;color:#666;}
+.Msg_Box_Success{padding:30px 25px;background:url('public/ico.png') -515px -50px no-repeat;}
+.Msg_Box_Info{padding:30px 25px;display:inline-block;background:url('public/ico.png') -460px -50px no-repeat;}
+.Msg_Box_Error{padding:30px 25px;display:inline-block;background:url('public/ico.png') -575px -50px no-repeat;}
+.Msg_Box_Question{padding:30px 25px;display:inline-block;background:url('public/ico.png') -625px -50px no-repeat;}
+.Msg_Box_Loading{padding:10px 85px;background: url(public/loading.gif) no-repeat;}
+
+/**/
+.maintain{background:#fff;height:100%;}
+.maintain .noData{padding:15px 20px;}
+.maintain .button{outline:none;border:none;font-size:14px;display:inline-block;padding:10px 15px;margin:20px;background:#A09F9F;color:white;border-radius:25px; cursor:pointer;border:none;}
+.maintain .button:hover{background:#336797;color:#fff;}
+
+
+/*账户信息修改*/
+#modifyNicknameForm input,#modifyPasswordForm input{padding:5px;margin:0 10px;}
+#modifyPasswordForm{margin-top:30px;}
+
+/*用户留言*/
+.msg .fl{float:left;text-align: left;}
+.msg .fr{float:right;text-align: right;}
+.msg .me span,.msg .kf span{display: inline-block;width: 25px;line-height: 25px;padding: 5px 4px;margin-top: 23px;text-align: center;}
+.msg .me{color:#6c7d8a;}
+.msg .me .content .context{border:1px solid #899faf;background: #fff;}
+.msg .kf{color:#495c6a;}
+.msg .kf .content .context{border:1px solid #8facc3;background: #aabed4;   }
+.msg .me .content，.msg .kf .content{width:135px;}
+.msg .me .content .time,.msg .kf .content .time{width:135px;color:#9eaeba;margin-top:5px;}
+.msg .me .content .context,.msg .kf .content .context{width:130px;padding:5px 3px;table-layout:fixed; word-break: break-all;position: relative;border-radius: 6px;margin:0px 0 10px 5px;}
+.msg .me .content .context:before{content:" ";position: absolute;display: inline-block;border-color:transparent  #899faf transparent transparent;border-style: solid;border-width: 7px;left:-14px;top:4px;}
+.msg .me .content .context:after{content:" ";position: absolute;display: inline-block;border-color:transparent  #fff transparent transparent;border-style: solid;border-width: 6px;left:-12px;top:5px;}
+.msg .kf .content .context:before{content:" ";position: absolute;display: inline-block;border-color:transparent   transparent transparent #8facc3;border-style: solid;border-width: 7px;right:-14px;top:4px;}
+.msg .kf .content .context:after{content:" ";position: absolute;display: inline-block;border-color:transparent   transparent transparent #aabed4;border-style: solid;border-width: 6px;right:-12px;top:5px;}
+.msg .sendMsg{text-align:center; }
+.msg .sendMsg textarea{height:45px;width:150px;border:1px solid #8facc3;padding:5px 4px;margin-top:5px;}
+.msg .sendMsg a{display:inline-block;width:53px;height:21px;background:url(public/fabiao.png) center center no-repeat;color:#fff;line-height: 21px;text-decoration: none;margin-right: -110px;margin-top:5px;}
+
+
+/** 加载中的动画 */
+.spinner {width:100%;height:100%;z-index: 10001;background:rgba(1,1,1,.75);position: fixed;top:0;left:0;}
+.spinner:before,.spinner:after {z-index:10002;top:50%;left:50%;content:'';width: 60px;height: 60px;margin:-30px 0 0 -30px;border-radius: 50%;background-color: #fff;opacity: 0.6;position: absolute;-webkit-animation: bounce 2.0s infinite ease-in-out;animation: bounce 2.0s infinite ease-in-out;}
+.spinner:after {-webkit-animation-delay: -1.0s;animation-delay: -1.0s;}
+@-webkit-keyframes bounce {
+  0%, 100% { 
+    -webkit-transform: scale(0.0) 
+  }
+  50% { 
+    -webkit-transform: scale(1.0) 
+  }
+} 
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}

@@ -1,0 +1,58 @@
+@charset "utf-8";
+/***此文件为 体育 颜色为 墨绿色  时样式****/
+
+/***顶部公共样式颜色 ****/
+.top_box_border_bottom_color{  /** 顶部导航条下边框颜色   ****/
+	border-bottom:1px solid #BB9689;
+}
+
+.login_alert_info_bg{
+	background-color: rgba(126,176,45,0.9);
+	color:#fff;
+}
+.windowBox_titleBox .title_text_color{
+	color:#c2b971;
+}
+#joinForm,#getPasswordForm{
+	background-color:#c2b971;
+}
+.lang_choose_sub li:hover{
+	color:#c2b971;
+}
+.top .login_box .userLink a:hover{
+	color:#c2b971;
+}
+
+
+
+/***左侧颜色***/
+.left_change_box>div.active{
+	color:#c2b971;
+}
+.itemUl li.itemUl_li_active span{
+	color:#c2b971;
+}
+.itemUl li:hover span{
+	color:#c2b971;
+}
+ul.page_left_content li label:hover span{
+	color:#c2b971;
+}
+
+.odds:hover{
+	background-color:#c2b971;
+	color:#fff;
+}
+.lx_scClass{
+	background-position:-42px -156px;
+}
+.scClass{
+	background-position:-47px -274px;
+}
+table tr td span.beting {
+    background-color: #c2b971;
+    color: #fff;
+}
+.lx{
+	background-color:#4B4542;
+}
