@@ -1,8 +1,5 @@
 @media (min-width: 768px){
-    .introduce_img{
-        width:490px;
-        height:auto;
-    }
+    
     .zixun dl{
         margin-top: 36%;
     }
@@ -10,7 +7,9 @@
         margin-top:42%;
     }
     .search_box{
-        margin-top:41%;
+        margin-top:20%;
+        z-index: 6;
+        position:relative;
     }
 }
 @media (max-width: 767px) {
@@ -23,7 +22,10 @@
         margin:20px auto;
     }
 }
-
+.introduce,.ws{padding-top:30px;padding-bottom:60px;}
+.ws{background-color:#1074C3;padding-top:60px;}
+.release{padding-top:60px;padding-bottom:60px;}
+.introduce img{margin-top:30px;}
 .text-desc{
     font-size:22px;
     color:#323232;
@@ -88,6 +90,7 @@
 
 .search{
     background-color:#5EA3DE;
+    padding-top:10px;
 }
 .search div{
     color:#fff;
@@ -101,11 +104,25 @@
     font-size:22px;
     margin-bottom:28px;
 }
-
+.sport_shouji_img{
+    z-index:3;
+    margin-bottom: 3.2%;
+}
+.sport_shouji_bj{
+    z-index:1;
+    bottom:0;
+    left:-9.3%;
+}
 
 
 .understand h4 {
     font-size:26px;
     margin-top:56px;
-    margin-bottom:30px;
+    color:#A31620;
+}
+.understand p{
+	margin-bottom:40px;
+}
+.understand{
+	padding-bottom:60px;
 }

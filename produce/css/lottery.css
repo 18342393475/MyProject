@@ -18,6 +18,13 @@ mark{
     -o-animation: span 1s ease infinite alternate;
     animation: span 1s ease infinite alternate;
 }
+.introduce-text li:nth-child(1) span,.introduce-text li:nth-child(3) span{
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
 @keyframes span{
     0%{
         -webkit-transform: scale(1);
@@ -45,9 +52,9 @@ mark{
         margin-top:0;
     }
     .mobile-flex{
-        display: -webkit-box; /* �ϰ汾�﷨: Safari, iOS, Android browser, older WebKit browsers. */
-        display: -moz-box; /* �ϰ汾�﷨: Firefox (buggy) */
-        display: -ms-flexbox; /* ��ϰ汾�﷨: IE 10 */
+        display: -webkit-box; /* �ϰ汾�﷨: Safari, iOS, Android browser, older WebKit browsers. */
+        display: -moz-box; /* �ϰ汾�﷨: Firefox (buggy) */
+        display: -ms-flexbox; /* ��ϰ汾�﷨: IE 10 */
 
         display:-webkit-flex;
         display:flex;
@@ -68,7 +75,7 @@ mark{
 }
 @media (min-width: 768px) {
     .bg_bottom_box{
-        padding-bottom: 120px;
+        padding-bottom: 80px;
     }
     .choose-text{
         position: absolute;
@@ -105,7 +112,6 @@ mark{
 }
 .bg_bottom_box{
     margin:10px 0;
-    overflow:Hidden;
 }
 .bg_bottom_box>div{
     padding:0;
@@ -136,5 +142,24 @@ mark{
     overflow:hidden;
 }
 .gameLx_k3 .btn{
+    padding:6px 22px;
+    border-radius:20px;
     margin-bottom:32px;
+}
+.introduce{
+    position:relative;
+    padding-top:30px;
+    padding-bottom:100px;
+}
+.introduce img{position:relative;z-index:6;margin-top:30px;}
+.gameLx_desc p{margin-top:5px;}
+.gameLx_desc  .btn{
+    padding:6px 22px;
+    border-radius:20px;
+    margin-bottom: 10px;
+}
+.bg_bottom_box_sub{
+	bottom:-80px;
+	z-index:1;
+	left:-60px;
 }

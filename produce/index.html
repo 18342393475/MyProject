@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
         <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
         <title>友盈科技首页</title>
 
@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand logo" href="index.html">
-                        <img src="images/logo.jpg" alt=""/>
+                        <img src="images/logo.png" alt=""/>
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -43,7 +43,7 @@
                         <li><a href="index.html" class="active">首页</a></li>
                         <li><a href="sport.html">体育系统</a></li>
                         <li><a href="lottery.html">彩票系统</a></li>
-                        <li><a href="shares.html">股票系统</a></li>
+                        <li><a href="shares.html">金融系统</a></li>
                         <li><a href="case.html">经典案例</a></li>
                         <li><a href="contact_us.html">联系我们</a></li>
                     </ul>
@@ -51,34 +51,83 @@
             </div>
         </div>
 
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            	<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+            	
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
 
                 <div class="item active">
-                    <img src="images/index_banner.jpg" alt="友盈科技">
-                    <div class="carousel-caption">
-                        ...
+                    <div class="item_sub_show"></div>
+                    <div class="item_sub_absolute">
+                        <img src="images/index_banner.jpg"  alt="友盈科技">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNjY2OiM0NDQvdGV4dDpTZWNvbmQgc2xpZGUKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWU5ZjIwNzc2ZiB0ZXh0IHsgZmlsbDojNDQ0O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjQ1cHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZTlmMjA3NzZmIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjxnPjx0ZXh0IHg9IjI2NC45NTMxMjUiIHk9IjI3MC4xIj5TZWNvbmQgc2xpZGU8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="...">
-                    <div class="carousel-caption">
-                        ...
-                    </div>
+                	<div class="item_sub_show"></div>
+                    <div class="item_sub_absolute">
+                        <img src="images/sport_banner.png"  alt="友盈科技">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>     
+               
                 </div>
                 <div class="item ">
-                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNTU1OiMzMzMvdGV4dDpUaGlyZCBzbGlkZQpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1ZTlmMjA4NTVmIHRleHQgeyBmaWxsOiMzMzM7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6NDVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTVlOWYyMDg1NWYiPjxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjNTU1Ii8+PGc+PHRleHQgeD0iMjk4LjMyMDMxMjUiIHk9IjI3MC4xIj5UaGlyZCBzbGlkZTwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" alt="...">
-                    <div class="carousel-caption">
-                        ...
-                    </div>
+                	
+                	<div class="item_sub_show"></div>
+                    <div class="item_sub_absolute">
+                        <img src="images/lottery_banner.png"  alt="友盈科技">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>     
+                	
+                </div>
+                <div class="item ">
+                	
+                	<div class="item_sub_show"></div>
+                    <div class="item_sub_absolute">
+                        <img src="images/share_banner.png"  alt="友盈科技">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>     
+                	
+                </div>
+                <div class="item ">
+                	
+                	<div class="item_sub_show"></div>
+                    <div class="item_sub_absolute">
+                        <img src="images/case_banner.png"  alt="友盈科技">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>     
+                	
+                </div>
+                <div class="item ">
+                	
+                	<div class="item_sub_show"></div>
+                    <div class="item_sub_absolute">
+                        <img src="images/contact_banner.png"  alt="友盈科技">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>     
+           
                 </div>
             </div>
 
@@ -93,38 +142,39 @@
             </a>
         </div>
 
+
         <div class="section">
             <div class="container">
                 <h3 class="text-center">网站/APP&nbsp;&nbsp;5分钟打造专属您的官网</h3>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 col-xs-12">
                         <div class="row">
-                            <div class="col-sm-12 col-md-4 text-center img_box" >
+                            <div class="col-xs-4 col-md-4 text-center img_box" >
                                 <div class="img_box_sub" >
-                                    <img src="images/index_sport.png" data-wow-offset="200" class="bounceInLeft wow animated" alt="" style="visibility: visible;"/>
+                                    <img src="images/index_sport.png" class="img-responsive center-block bounceInLeft wow animated" alt="" style="visibility: visible;"/>
                                 </div>
-								<div class="fadeInLeft wow animated" data-wow-offset="50" style="visibility:visible;animation-duration:3s">
+								<div class="fadeInLeft wow animated" style="visibility:visible;animation-duration:3s">
 									<h4>体育系统</h4>
-                                	<div class="text-center">精装分析用户行为,为商家占领高地</div>
+                                	<p class="hidden-xs hidden-sm">精装分析用户行为,为商家占领高地</p>
 								</div>
                                 
                             </div>
-                            <div class="col-sm-12 col-md-4 text-center img_box" >
+                            <div class="col-xs-4 col-md-4 text-center img_box" >
                                 <div class="img_box_sub">
-                                    <img src="images/index_lottery.png" data-wow-offset="200" class="wow animated bounceInUp" alt="" style="visibility: visible;"/>
+                                    <img src="images/index_lottery.png"  class="img-responsive center-block wow animated bounceInUp" alt="" style="visibility: visible;"/>
                                 </div>
-								<div class="fadeInLeft wow animated" data-wow-offset="50" style="visibility:visible;animation-duration:3s">
-                                	<h4 >彩票系统</h4>
-                                	<div class="text-center">各式各样的新玩法,开奖准确快</div>
+								<div class="fadeInLeft wow animated"  style="visibility:visible;animation-duration:3s">
+                                	<h4 >体育系统</h4>
+                                	<p class="hidden-xs hidden-sm">各式各样的新玩法,开奖准确快</p>
                                	</div>
                             </div>
-                            <div class="col-sm-12 col-md-4 text-center img_box">
+                            <div class="col-xs-4 col-md-4 text-center img_box">
                                 <div class="img_box_sub">
-                                    <img src="images/index_shares.png" class="wow bounceInRight animated" data-wow-offset="200" alt="" style="visibility:visible"/>
+                                    <img src="images/index_shares.png" class="img-responsive center-block wow bounceInRight animated"  alt="" style="visibility:visible"/>
                                 </div>
-								<div class="fadeInLeft wow animated" data-wow-offset="50" style="visibility:visible;animation-duration:3s">
+								<div class="fadeInLeft wow animated"  style="visibility:visible;animation-duration:3s">
                                 	<h4 >股票系统</h4>
-                                	<div class="">各式各样的新玩法,开奖准确快</div>
+                                	<p class="hidden-xs hidden-sm">全球数据,每秒更新</p>
                                 </div>
                             </div>
                         </div>
@@ -133,56 +183,60 @@
             </div>
         </div>
 
-        <div class="case_box">
+        <div class="case_box img_show_box">
             <div class="container">
                 <div class="text-center case_title">
                     <div>INDUSTRY&nbsp;CASE</div>
                     <h5>经典案例</h5>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 ">
+                    <div class="col-xs-6 col-sm-4">
                         <div class="case_img_box wow flipInX animated" data-wow-offset="200" style="visibility: visible; animation-duration: 2s;animation-name: fadeInUp;">
 
-                            <img src="images/index_case_sport.jpg" alt="体育"/>
-                            <div class="text-left text-descrite">
-                                <h5>CILENT</h5>
-                                <h4>汇博体育</h4>
-                                <div class="time">
-                                    2017-09-21
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 ">
-                        <div class="case_img_box wow flipInX animated" data-wow-offset="200" style="visibility: visible; animation-duration: 2s;animation-delay:0.3s;animation-name: fadeInUp;">
-
-                            <img src="images/index_case_lottery.jpg" alt="彩票"/>
-                            <div class="text-left text-descrite">
-                                <h5>CILENT</h5>
-                                <h4>汇博体育</h4>
-                                <div class="time">
-                                    2017-09-21
-                                </div>
-                            </div>
+                            <img src="images/home-case.png" class="img-responsive center-block" alt="体育  彩票  金融"/>
+                            
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 ">
-                        <div class="case_img_box wow flipInX animated" data-wow-offset="200" style="visibility: visible; animation-duration: 2s;animation-delay:0.6s;animation-name: fadeInUp;">
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="case_img_box wow flipInX animated" data-wow-offset="200" style="visibility: visible; animation-duration: 2s;animation-name: fadeInUp;">
 
-                            <img src="images/index_case_share.jpg" alt="股票"/>
-                            <div class="text-left text-descrite">
-                                <h5>CILENT</h5>
-                                <h4>汇博体育</h4>
-                                <div class="time">
-                                    2017-09-21
-                                </div>
-                            </div>
+                            <img src="images/home-case1.png" class="img-responsive center-block" alt="体育  彩票  金融"/>
+                            
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-12 case_more_btn_box text-center">
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="case_img_box wow flipInX animated" data-wow-offset="200" style="visibility: visible; animation-duration: 2s;animation-name: fadeInUp;">
 
-                        <button type="button" class="case_more_btn btn">查看更多</button>
+                            <img src="images/home-case2.png" class="img-responsive center-block" alt="体育  彩票  金融"/>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="case_img_box wow flipInX animated" data-wow-offset="200" style="visibility: visible; animation-duration: 2s;animation-name: fadeInUp;">
+
+                            <img src="images/home-case3.png" class="img-responsive center-block" alt="体育  彩票  金融"/>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="case_img_box wow flipInX animated" data-wow-offset="200" style="visibility: visible; animation-duration: 2s;animation-name: fadeInUp;">
+
+                            <img src="images/home-case4.png" class="img-responsive center-block" alt="体育  彩票  金融"/>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="case_img_box wow flipInX animated" data-wow-offset="200" style="visibility: visible; animation-duration: 2s;animation-name: fadeInUp;">
+
+                            <img src="images/home-case5.png" class="img-responsive center-block" alt="体育  彩票  金融"/>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12  case_more_btn_box text-center">
+
+                        <a href="case.html" class="case_more_btn btn">查看更多</a>
                     </div>
                 </div>
 
@@ -209,51 +263,25 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <img class="img-responsive trends-img animated wow fadeInDown" src="images/trends.jpg" alt="" data-wow-offset="200" style="visibility:visible;animation-duration:6s"/>
+                        <img class="img-responsive trends-img animated wow fadeInDown" src="images/trends.jpg" alt="" style="visibility:visible;animation-duration:6s"/>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-9">
-                                <div class="clearfix">
-                                    <ul class="list-unstyled pull-left">
-                                        <li>公司介绍</li>
-                                        <li>联系我们</li>
-                                        <li>法律条款</li>
-                                        <li>招聘英才</li>
-                                        <li>免责声明</li>
-                                    </ul>
-                                    <div class="pull-right hidden-sm hidden-md hidden-lg">
-                                        <img class="about-img" src="images/shouji_01_03.png" width="103" height="103" alt=""/>
-                                    </div>
-                                </div>
-                                <address>
-                                    地址:&nbsp;&nbsp;广东省广州市番禺区光明南路199号&nbsp;友利电商园2栋楼614<br/>
-                                    <div style="height:16px;"></div>
-                                    <abbr title="Phone">电话:</abbr>&nbsp;&nbsp;020-34511745
-                                </address>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 hidden-xs text-center">
-                                <div class="about-text">关于我们</div>
-                                <img class="about-img" src="images/shouji_01_03.png" width="103" height="103" alt=""/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+        <div class="footer"></div>
+		<div class="contact_box">
+			<a href="contact_us.html">
+				<img src="images/home-message.png" alt="" />
+			</a>
+		</div>
 
         <script>
 			$(function(){
+                $('#identifier').carousel({
+                    interval: false
+                })
 				if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
 	                new WOW().init();
 	            };
