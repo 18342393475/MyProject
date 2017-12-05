@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta description="牛熊财富,一款简单好用的app"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>牛熊财富</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" type="text/css" href="fonts/fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/ishare.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="header relative">
+        <img src="images/header.jpg" alt="牛熊股票" class="hidden-xs hidden-sm header-img img-responsive center-block">
+        <img src="images/H5.jpg" alt="牛熊股票" id="fenxiang" class="hidden-md hidden-lg header-img img-responsive center-block">
+        <div class="absolute downBtn-box">
+            <div>
+                <a class="download  btn-ios">苹果下载</a>
+                <p class="text-center">IOS 7.0及以上</p>
+            </div>
+            <div>
+                <a class="download  btn-android">安卓下载</a>
+                <p class="text-center">Android4.0及以上</p>
+            </div>
+        </div>
+    </div>
+    <div class="container hidden-xs hidden-sm">
+        <div class="row youshi">
+            <div class="col-xs-6">
+                <img src="images/introduce_04.jpg" alt="股票" class="img-responsive center-block">
+            </div>
+            <div class="col-xs-6">
+                <div class="pull-left relative sub">
+                    <div class="pull-left youshi-introduce relative">
+                        <h3>我们的优势</h3>
+                        <p>牛熊网站有两大玩法(<span class="color-red">股指期待,时段升跌</span>)</p>
+                        <h4><span class="bround">01</span>&nbsp;时段升跌</h4>
+                        <p>上一时段结束时的股指与当前购买时段结束的股指对比</p>
+                        <p>根据牛友下注涨跌计算盈亏</p>
+                        <h4><span class="bround">02</span>&nbsp;股指期待</h4>
+                        <p>下注时间点对应的股指与平仓时对应的股指对比</p>
+                        <p>根据牛友下注涨跌来计算盈亏</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="special-container hidden-md hidden-lg container">
+        <h3 class="text-center">我们的优势玩法</h3>
+        <p class="text-center">牛熊网站有两大玩法(<span class="color-red">股指期待,时段升跌</span>)</p>
+        <div class="row youshi h5show">
+            <div class="col-xs-6">
+                <img src="images/H5(1).jpg" alt="" class="img-responsive center-block">
+            </div>
+            <div class="col-xs-6">
+                <h3>时段升跌</h3>
+                <p>
+                    上一时段结束时的股指与当前购买时段结束的股指对比
+                    根据牛友下注涨跌计算盈亏
+                </p>
+            </div>
+        </div>
+        <div class="row youshi bgColor h5show">
+
+            <div class="col-xs-6">
+                <h3>股指期待</h3>
+                <p>
+                    下注时间点对应的股指与平仓时对应的股指对比
+                    根据牛友下注涨跌来计算盈亏
+                </p>
+            </div>
+            <div class="col-xs-6">
+                <img src="images/H5(2).jpg" alt="" class="img-responsive center-block">
+            </div>
+        </div>
+    </div>
+
+    <div class="invite-friend relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-center">好友组团&nbsp;有富同享</h2>
+                </div>
+                <div class="col-xs-4 col-md-3 relative">
+                    <img src="images/fenxiang.png" alt="" class="img-responsive center-block">
+                    <span class="absolute hidden-xs jt-right glyphicon glyphicon-chevron-right"></span>
+                    <p class="text-center">邀请好友加入团队</p>
+                </div>
+                <div class="col-xs-4 col-md-3 relative">
+                    <img src="images/fenxiang1.png" alt="" class="img-responsive center-block">
+                    <span class="absolute hidden-xs jt-right glyphicon glyphicon-chevron-right"></span>
+                    <p class="text-center">团队成员下单</p>
+                </div>
+                <div class="col-xs-4 col-md-3">
+                    <img src="images/fenxiang2.png" alt="" class="img-responsive center-block">
+                    <p class="text-center">下单成功,赢豪礼</p>
+                </div>
+                <div class="col-xs-12 col-md-3 text-center">
+                    <a  class=" invite-friend-btn" data-toggle="modal" data-target="#myModal">立即邀请好友<span class="glyphicon glyphicon-menu-right"></span><span class="glyphicon glyphicon-menu-right right-second "></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="text-center" >界面简洁&nbsp;&nbsp;轻松操作</h2>
+        <p class="text-center">实时行情第一时间送达,关注个股动态智能提醒,更快捷更高效</p>
+        <div class="container picture-show">
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <img src="images/introduce_09.jpg" alt="" class="img-responsive center-block img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <img src="images/introduce_11.jpg" alt="" class="img-responsive center-block img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <img src="images/introduce_13.jpg" alt="" class="img-responsive center-block img-thumbnail">
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <img src="images/introduce_15.jpg" alt="" class="img-responsive center-block img-thumbnail">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer relative">
+        <img src="images/introduce_21.jpg" alt="" class="hidden-xs hidden-sm footer-img img-responsive center-block">
+        <img src="images/h5(footer).jpg" alt=""   class="hidden-md hidden-lg footer-img img-responsive center-block">
+        <div class="absolute downBtn-box">
+            <div>
+                <a class="download  btn-ios">苹果下载</a>
+                <p class="text-center">IOS 7.0及以上</p>
+            </div>
+            <div>
+                <a class="download  btn-android">安卓下载</a>
+                <p class="text-center">Android4.0及以上</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">分享好友</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="share" class="iShare iShare-32 iShare3 relative"></div>
+                </div>
+                <div class="modal-footer">
+
+                    <div class="hidden-md hidden-lg">
+                        <p>长按复制下方链接，去粘贴给好友吧：</p>
+                        <a href="" id="href"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/iShare.js"></script>
+    <script>
+        $(function(){
+            var reg=/\?.*/ig;
+            var href=window.location.href;
+            href=href.replace(reg,'');
+
+            //下载
+            // 安卓下载
+            $(".btn-android").on("click",function(){
+                var ua = navigator.userAgent;
+                window.location.href='http://m.tk.cn/apkdownload/taikang_60227.apk'
+
+            })
+            //ios 下载
+            $(".btn-ios").on("click",function(){
+                var ua = navigator.userAgent,targetHref;
+                //window.location.href='https://itunes.apple.com/app/io.dcloud.H595C7E5B';
+                window.location.href='http://yycf.qq6879.com/app/ios/yycf.ipa';
+            })
+
+            // 分享
+            $("#href").html(href).attr("href",href);
+            (new iShare({container:'.iShare3',config:{
+                title: '牛熊财富',
+                description: '一款超简单有趣的app软件,下单有惊喜哦。地址:'+href,
+                url:href,
+                image:document.getElementById("fenxiang").src,
+                isAbroad: false,
+                isTitle: true,
+                initialized: true,
+                WXoptions:{
+                    isTitleVisibility: true,
+                    title: '分享到微信',
+                    isTipVisibility: true,
+                    tip: '打开微信扫一扫,即可将网页分享至朋友圈',
+                    qrcodeW: 120,
+                    qrcodeH: 120,
+                    qrcodeBgc: '#fff',
+                    qrcodeFgc: '#000',
+                    bgcolor: '#fff'
+                }
+            }}));
+        })
+
+    </script>
+
+</body>
+</html>
